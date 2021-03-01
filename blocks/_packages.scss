@@ -1,0 +1,120 @@
+.packages {
+  padding: 110px 0 90px;
+  background: #fafafa;
+
+  @include sectionHeader;
+
+  &__container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 30px;
+    padding: 0 95px;
+  }
+
+  &__item {
+    padding: 50px 30px;
+    margin-bottom: 30px;
+    box-shadow: 0px 0px 46px 0px #6168d433;
+    border-radius: 8px;
+    border-top: 7px solid #eae6e4;
+    border-bottom: 7px solid #eae6e4;
+    padding: 50px 30px;
+    background: #fff;
+    transition: 0.3s linear;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+
+    &:hover {
+      border-color: $green;
+    }
+
+    &:hover .packages__btn {
+      background: $green;
+    }
+
+    &:hover .packages__btn-icon {
+      background: #0b9214;
+    }
+  }
+
+  &__img {
+    width: 62px;
+    margin-bottom: 20px;
+  }
+
+  &__label {
+    font-size: 18px;
+    margin: 0 0 5px;
+    color: $text;
+    font-weight: 600;
+  }
+
+  &__sublabel {
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 500;
+    display: block;
+    color: #9098a9;
+    margin: 0 0 25px;
+  }
+
+  &__sub {
+    line-height: 1.1;
+    margin: 0 0 15px;
+    font-size: 14px;
+    font-weight: 500;
+    color: #717f99;
+  }
+
+  &__price {
+    font-size: 16px;
+    font-weight: 600;
+    box-shadow: 0px 0px 27px 0px #6168d42b;
+    padding: 18px 10px;
+    border-radius: 50px;
+    width: 90%;
+    margin: 0 0 30px;
+    color: #444172;
+    text-align: center;
+    box-sizing: border-box;
+  }
+
+  &__list {
+    margin: 0 0 30px;
+    padding: 0;
+    width: 100%;
+    list-style: none;
+  }
+
+  &__list-item {
+    padding-bottom: 12px;
+    border-bottom: 1px solid #f1f1f1;
+    margin-bottom: 12px;
+    font-size: 14px;
+    font-weight: 500;
+    color: #717f99;
+    text-align: center;
+
+    &:last-of-type {
+      margin-bottom: 0;
+    }
+  }
+
+  &__btn {
+    @include grayBtn;
+  }
+
+  &__btn-icon {
+    height: 35px;
+    width: 35px;
+    text-align: center;
+    line-height: 35px;
+    background: #574d61;
+    border-radius: 50%;
+    font-size: 14px;
+    margin-left: 12px;
+    transition: 0.3s linear;
+  }
+}

@@ -1,0 +1,64 @@
+.doctors {
+  padding: 110px 15px 65px;
+  position: relative;
+  background: url(../images/doctors-back.jpg);
+  background-position: 50%;
+  -webkit-background-size: cover;
+  background-size: cover;
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background: #1d142c;
+    opacity: 0.97;
+  }
+
+  @include sectionHeaderWhite;
+
+  &__container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    position: relative;
+    padding: 0 80px;
+    column-gap: 30px;
+  }
+
+  &__item {
+    display: flex;
+    padding: 0 0 55px;
+  }
+
+  &__img {
+    border-radius: 50%;
+    border: 3px solid #fff;
+    width: 91px;
+    height: 91px;
+    margin-right: 25px;
+  }
+
+  &__label {
+    margin: 0 0 10px;
+    font-size: 18px;
+    font-weight: 500;
+    color: #fff;
+  }
+
+  &__text {
+    font-size: 14px;
+    line-height: 26px;
+    color: #dbdbdb;
+    margin: 0 0 15px;
+  }
+
+  &__position {
+    color: $green;
+    margin: 0;
+    font-size: 14px;
+    font-weight: 500;
+    font-style: italic;
+  }
+}

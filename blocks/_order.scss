@@ -1,0 +1,38 @@
+.order {
+  padding: 110px 15px 120px;
+
+  @include sectionHeader;
+
+  &__container {
+    display: flex;
+  }
+
+  &__carousel-container {
+    width: 58%;
+    padding-right: 30px;
+  }
+
+  &__item {
+    outline: none;
+  }
+
+  &__carousel_type_top {
+    margin-bottom: 20px;
+    padding: 0 10px;
+  }
+
+  &__carousel_type_bottom {
+    .order__item {
+      padding: 0 10px;
+    }
+  }
+
+  &__img {
+    width: 100%;
+  }
+
+  &__content {
+    width: 41%;
+    padding: 0 15px;
+  }
+}

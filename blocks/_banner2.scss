@@ -1,0 +1,123 @@
+.supplement {
+  padding: 110px 15px;
+  display: flex;
+  align-items: center;
+
+  &__img-container {
+    display: flex;
+    justify-content: center;
+    width: 50%;
+    padding: 15px;
+    position: relative;
+
+    &::before,
+    &::after {
+      content: "";
+      background-repeat: no-repeat;
+      position: absolute;
+
+      left: 50%;
+      z-index: -1;
+      top: 50%;
+      transform: translate(-50%, -50%);
+    }
+
+    &::before {
+      width: 578px;
+      height: 578px;
+      background: url(../images/banner2-before.png);
+    }
+
+    &::after {
+      width: 545px;
+      height: 544px;
+      background: url(../images/banner2-after.png);
+    }
+  }
+
+  &__img {
+    width: 421px;
+  }
+
+  &__container {
+    width: 41%;
+  }
+
+  &__title {
+    margin: 0 0 10px;
+    font-size: 12px;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: $green;
+    letter-spacing: 3px;
+  }
+
+  &__subtitle {
+    margin: 0 0 30px;
+    font-size: 36px;
+    line-height: 1.4;
+    text-transform: capitalize;
+    color: $text;
+  }
+
+  &__text {
+    font-size: 14px;
+    font-weight: 500;
+    font-style: italic;
+    line-height: 26px;
+    margin-bottom: 0;
+    padding-right: 50px;
+    margin: 0 0 35px;
+    color: #747373;
+  }
+
+  &__list {
+    margin: 0 0 45px;
+    padding: 0;
+    list-style: none;
+  }
+
+  &__item {
+    margin: 0 0 15px;
+    display: flex;
+    align-items: center;
+    width: 100%;
+
+    &:last-child {
+      margin: 0;
+    }
+
+    &:hover .supplement__check {
+      background: $green;
+      color: white;
+    }
+  }
+
+  &__check {
+    border-radius: 50%;
+    line-height: 32px;
+    background: #373d46;
+    width: 32px;
+    height: 32px;
+    font-size: 12px;
+    color: #2acb35;
+    margin-right: 15px;
+    transition: 0.3s linear;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__item-text {
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 26px;
+    margin: 0;
+    font-style: normal;
+    color: #747373;
+  }
+
+  &__btn {
+    @include greenBtn;
+  }
+}

@@ -1,0 +1,50 @@
+.timers {
+  padding: 120px 15px 75px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  column-gap: 30px;
+  background: url(../images/timers-back.jpg);
+  background-position: center;
+  background-size: cover;
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background: #1d142c;
+    opacity: 0.9;
+  }
+
+  &__item {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    margin: 0 0 50px;
+  }
+
+  &__img {
+    margin-right: 30px;
+  }
+
+  &__count {
+    font-size: 36px;
+    font-weight: 700;
+    margin: 0 0 10px;
+    line-height: 1;
+    color: $green;
+  }
+
+  &__value {
+    line-height: 1;
+    margin-bottom: 0;
+    font-size: 14px;
+    font-weight: 600;
+    color: #e7e4e4;
+    text-transform: uppercase;
+    margin: 0;
+  }
+}
