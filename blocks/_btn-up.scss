@@ -1,0 +1,23 @@
+.btn-up {
+  position: fixed;
+  z-index: 20;
+  background: $green;
+  height: 50px;
+  width: 50px;
+  right: 50px;
+  bottom: 77px;
+  color: #fff;
+  font-size: 20px;
+  text-align: center;
+  border-radius: 50%;
+  font-size: 20px;
+  line-height: 50px;
+  outline: none;
+  border: none;
+  opacity: 0;
+  transition: all 0.2s linear;
+
+  &_visible {
+    opacity: 1;
+  }
+}

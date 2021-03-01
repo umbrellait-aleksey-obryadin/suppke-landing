@@ -6,9 +6,14 @@
   position: relative;
   z-index: 1;
   padding: 120px 0;
-  background-repeat: no-repeat;
-  display: flex;
-  justify-content: center;
+
+  @include container;
+
+  &__main-container {
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+  }
 
   &__container {
     max-width: 58%;

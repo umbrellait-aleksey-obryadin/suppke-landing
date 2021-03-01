@@ -1,10 +1,12 @@
 .doctors {
-  padding: 110px 15px 65px;
+  padding: 110px 0 65px;
   position: relative;
   background: url(../images/doctors-back.jpg);
   background-position: 50%;
   -webkit-background-size: cover;
   background-size: cover;
+
+  @include container;
 
   &::before {
     content: "";

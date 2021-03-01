@@ -1,8 +1,13 @@
 .skills {
   background: url(../images/skills-back.jpg);
   background-repeat: repeat;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+
+  @include container;
+
+  &__main-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
 
   &__item {
     display: flex;

@@ -1,6 +1,8 @@
 .blog {
-  padding: 110px 15px 90px;
+  padding: 110px 0 90px;
   background: #fafafa;
+
+  @include container;
 
   @include sectionHeader;
 

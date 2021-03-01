@@ -1,0 +1,130 @@
+.ingredients {
+  padding: 110px 0 120px;
+  position: relative;
+  background-image: url(../images/ingredients-back.jpg);
+  background-position: center;
+  background-size: cover;
+
+  @include container;
+
+  @include sectionHeader;
+
+  &__container {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+
+  &__img {
+    max-width: 50%;
+    width: 100%;
+    box-sizing: border-box;
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+
+  &__list {
+    list-style: none;
+    margin: 0;
+    box-sizing: border-box;
+    max-width: 50%;
+    padding: 0 15px;
+    width: 100%;
+  }
+
+  &__item {
+    margin: 0 0 13px;
+    padding: 23px 25px;
+    background: #fff;
+    box-shadow: 0px 0px 70px 0px #2d035b0d;
+    width: 100%;
+    display: block;
+    box-sizing: border-box;
+
+    &:last-of-type {
+      margin: 0;
+    }
+
+    &_active {
+      & .ingredients__label {
+        padding-bottom: 15px;
+      }
+      & .ingredients__label,
+      & .ingredients__label::after {
+        color: $green;
+      }
+
+      & .ingredients__label::after {
+        border-color: $green;
+      }
+
+      & .ingredients__text_animate {
+        animation: accordion 1s ease paused;
+      }
+
+      & .ingredients__text {
+        border-top: 1px dashed #d8d8d8;
+        padding: 20px 0 0;
+        margin: 0 0 10px;
+        // height: auto;
+        // border-top: 1px dashed #d8d8d8;
+        // padding: 20px 0 0;
+        // margin: 0 0 10px;
+        // opacity: 1;
+        // height: auto;
+        // overflow: visible;
+        // padding: 20px 0 0;
+
+        // height: auto;
+        // position: relative;
+        // height: 0;
+        // overflow: hidden;
+        // transition: height 0.35s ease;
+        // display: block;
+
+        // height: auto;
+      }
+    }
+  }
+
+  &__label {
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 600;
+    display: block;
+    line-height: 1.4;
+    padding-right: 50px;
+    position: relative;
+    color: $text;
+    margin: 0;
+    transition: all 0.3s ease-out 0s;
+
+    &::after {
+      position: absolute;
+      content: "\f067";
+      color: #747373;
+      border: 2px solid #747373;
+      top: 0;
+      right: 0;
+      vertical-align: middle;
+      font-family: "Font Awesome 5 Free";
+      width: 20px;
+      text-align: center;
+      font-weight: 700;
+      line-height: 18px;
+      font-size: 10px;
+      border-radius: 50%;
+      background: #fff;
+    }
+  }
+
+  &__text {
+    font-size: 14px;
+    line-height: 28px;
+    color: #747373;
+    margin: 0;
+    max-height: 0;
+    overflow: hidden;
+    transition: all 0.2s ease-out;
+  }
+}

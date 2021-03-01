@@ -1,0 +1,99 @@
+.form {
+  &__title {
+    margin: 25px 0 15px;
+    color: $text;
+    font-size: 15px;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    font-weight: 700;
+  }
+
+  &__about {
+    font-size: 14px;
+    line-height: 26px;
+    margin: 0 0 15px;
+    color: #747373;
+  }
+
+  &__required {
+    color: red;
+  }
+
+  &__label {
+    color: #7e7e7e;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 400;
+    margin: 0 0 8px;
+  }
+
+  &__select {
+    outline: none;
+    width: 100%;
+    background: #f1f1f1;
+    height: 50px;
+    border: none;
+    font-size: 16px;
+    padding: 10px;
+    margin-bottom: 20px;
+  }
+
+  &__textarea {
+    margin: 0 0 35px;
+    width: 100%;
+    padding: 20px 20px;
+    border: none;
+    background: #f1f1f1;
+    height: 160px;
+    transition: 0.3s;
+    font-size: 14px;
+    font-weight: 500;
+    color: #6c6c6c;
+    outline: none;
+  }
+
+  &__input {
+    margin: 0 0 15px;
+    width: 100%;
+    padding: 19px 20px;
+    border: none;
+    background: #f1f1f1;
+    color: #6c6c6c;
+    transition: 0.3s;
+    font-size: 14px;
+    font-weight: 500;
+    outline: none;
+  }
+
+  &__check-container {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    margin-bottom: 15px;
+  }
+
+  &__check {
+    outline: none;
+    margin-right: 10px;
+  }
+
+  &__check-label {
+    color: #7e7e7e;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 400;
+  }
+
+  &__submit {
+    cursor: pointer;
+    margin-bottom: 15px;
+    width: 100%;
+    padding: 19px 20px;
+    border: none;
+    margin-bottom: 20px;
+    background: $green;
+    color: white;
+    font-size: 14px;
+    font-weight: 500;
+  }
+}

@@ -3,11 +3,23 @@
   border-bottom: 1px solid #2acb352b;
   display: flex;
   justify-content: center;
+  background: white;
+
+  &_stick {
+    position: sticky;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 2000;
+    animation: fadeInDown 0.5s;
+  }
+
+  @include container;
 
   &__content {
     max-width: 1300px;
     width: 100%;
-    padding: 11px 15px;
+    padding: 11px 0;
     display: flex;
     justify-content: space-between;
     align-items: center;

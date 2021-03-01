@@ -1,13 +1,19 @@
 .banner {
-  padding: 130px 25px;
-  display: flex;
-  flex-direction: row-reverse;
-  justify-content: space-between;
-  align-items: center;
+  padding: 130px 0;
+
+  @include container;
+
+  &__main-container {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+  }
 
   &__img {
     width: 100%;
     max-width: 50%;
+    animation: fadeInRight 0.6s;
   }
 
   &__content {
@@ -36,16 +42,19 @@
     margin: 0 0 35px;
     color: #747373;
     padding: 0 75px 0 0;
+    animation: fadeInUp 0.6s;
   }
 
   &__btn {
     @include greenBtn;
+    animation: fadeInLeft 0.6s;
   }
 
   &__btn_type_white {
     background: white;
     color: $green;
     margin-left: 20px;
+    animation: fadeInRight 0.6s;
 
     &:hover {
       background: $green;

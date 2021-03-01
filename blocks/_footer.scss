@@ -1,0 +1,298 @@
+.footer {
+  background-position: center;
+  background-size: cover;
+  background-image: url(../images/footer-back.jpg);
+  padding: 175px 0 0;
+  position: relative;
+
+  @include container;
+
+  &__container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap: 30px;
+    margin-bottom: 85px;
+  }
+
+  &__item {
+    padding: 15px;
+  }
+
+  &__logo {
+    text-decoration: none;
+    max-width: 190px;
+    display: block;
+    margin-bottom: 35px;
+  }
+
+  &__logo-img {
+    width: 100%;
+  }
+
+  &__text {
+    color: #969696;
+    margin: 0 0 25px;
+    font-size: 14px;
+    font-weight: 500;
+  }
+
+  &__soc-container {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+  }
+
+  &__soc {
+    margin-right: 5px;
+
+    &:last-of-type {
+      margin: 0;
+    }
+  }
+
+  &__soc-link {
+    display: block;
+    height: 40px;
+    width: 40px;
+    text-align: center;
+    line-height: 40px;
+    color: #949697;
+    background: #252526;
+    border-radius: 50%;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    margin-right: 5px;
+    cursor: pointer;
+
+    &:hover {
+      color: $green;
+    }
+
+    &:last-of-type {
+      margin: 0;
+    }
+  }
+
+  &__posts {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  &__post {
+    display: flex;
+    align-items: center;
+
+    padding-bottom: 15px;
+    margin-bottom: 15px;
+    border-bottom: 1px dashed #464547;
+
+    &:last-of-type {
+      margin: 0;
+      padding: 0;
+      border: none;
+    }
+  }
+
+  &__post-link {
+    display: block;
+    margin-right: 15px;
+    width: 100%;
+    max-width: 90px;
+    max-height: 78px;
+  }
+
+  &__post-img {
+    border-radius: 4px;
+    width: 100%;
+  }
+
+  &__label {
+    font-weight: 600;
+    line-height: 24px;
+    text-decoration: none;
+    color: #e4e4e4;
+    font-size: 14px;
+    margin: 0 0 5px;
+    display: block;
+
+    &:hover {
+      color: $green;
+    }
+  }
+
+  &__date {
+    font-size: 12px;
+    display: block;
+    color: #969696;
+    margin: 0;
+    line-height: 30px;
+  }
+
+  &__links {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+  }
+
+  &__link-container {
+    padding-bottom: 15px;
+    margin-bottom: 15px;
+    border-bottom: 1px dashed #464547;
+
+    &:last-of-type {
+      padding: 0;
+      margin: 0;
+      border: none;
+    }
+  }
+
+  &__link {
+    color: #969696;
+    display: block;
+    line-height: 30px;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 16px;
+    text-decoration: none;
+
+    &:hover {
+      color: $green;
+    }
+  }
+
+  &__message-input {
+    margin: 0 0 10px;
+    border: none;
+    padding: 17px 16px;
+    width: 100%;
+    border-radius: 3px;
+    margin: 0 0 10px;
+    font-size: 12px;
+    line-height: inherit;
+  }
+
+  &__message-area {
+    padding: 17px 16px;
+    width: 100%;
+    border-radius: 3px;
+    margin: 0 0 10px;
+    font-size: 12px;
+    height: 98px;
+    line-height: inherit;
+    font-family: inherit;
+  }
+
+  &__message-submit {
+    padding: 14px 40px;
+    border-radius: 3px;
+    text-align: center;
+    border: 2px solid $green;
+    text-transform: uppercase;
+    transition: all 0.4s ease-in-out;
+    background: $green;
+    color: #fff;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 700;
+
+    &:hover {
+      background: transparent;
+      color: $green;
+    }
+  }
+
+  &__title {
+    margin: 0 0 30px;
+    display: block;
+    font-size: 18px;
+    color: #e4e4e4;
+    text-transform: capitalize;
+    font-weight: 600;
+  }
+
+  &__form {
+    box-shadow: 0px 2px 12.09px 0.91px #4444443d;
+    background: #fff;
+    background-image: url(../images/footer-form-back.jpg);
+    border: 8px solid #2acb35;
+    padding: 40px 50px;
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+    top: -86px;
+    left: 0;
+    right: 0;
+  }
+
+  &__form-content {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin: 0;
+  }
+
+  &__form-title {
+    color: $text;
+    font-size: 30px;
+    font-weight: 700;
+    margin: 0 0 10px;
+  }
+
+  &__form-subtitle {
+    font-size: 16px;
+    color: #5b5b5b;
+    font-weight: 500;
+    font-style: italic;
+    display: block;
+    margin: 0;
+  }
+
+  &__input {
+    padding: 22px 25px;
+    border: none;
+    background: #edecec;
+    font-size: 14px;
+    margin-right: 3px;
+    width: 465px;
+    box-sizing: border-box;
+  }
+
+  &__form-submit {
+    box-sizing: border-box;
+    font-size: 17px;
+    font-style: italic;
+    font-weight: 700;
+    text-transform: capitalize;
+    padding: 18px 30px;
+    border-radius: 0;
+    background: $green;
+    outline: none;
+    color: white;
+    cursor: pointer;
+    border: 2px solid $green;
+    transition: all 0.4s ease-in-out;
+
+    &:hover {
+      background: white;
+      color: $green;
+    }
+  }
+
+  &__copyright {
+    background: #000;
+    padding: 35px 0;
+  }
+
+  &__copyright-text {
+    color: #969696;
+    margin: 0;
+    font-size: 14px;
+    font-weight: 500;
+    text-align: center;
+  }
+}

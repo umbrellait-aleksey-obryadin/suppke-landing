@@ -1,7 +1,12 @@
 .supplement {
-  padding: 110px 15px;
-  display: flex;
-  align-items: center;
+  padding: 110px 0;
+
+  @include container;
+
+  &__main-container {
+    display: flex;
+    align-items: center;
+  }
 
   &__img-container {
     display: flex;

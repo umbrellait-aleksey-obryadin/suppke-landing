@@ -1,12 +1,17 @@
 .timers {
-  padding: 120px 15px 75px;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  column-gap: 30px;
+  padding: 120px 0 75px;
   background: url(../images/timers-back.jpg);
   background-position: center;
   background-size: cover;
   position: relative;
+
+  @include container;
+
+  &__main-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap: 30px;
+  }
 
   &::before {
     content: "";

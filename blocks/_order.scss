@@ -1,5 +1,7 @@
 .order {
-  padding: 110px 15px 120px;
+  padding: 110px 0 120px;
+
+  @include container;
 
   @include sectionHeader;
 
@@ -34,5 +36,70 @@
   &__content {
     width: 41%;
     padding: 0 15px;
+    margin-top: 30px;
+    box-sizing: border-box;
+  }
+
+  &__name {
+    color: $text;
+    margin: 0 0 20px;
+    font-size: 30px;
+    text-transform: uppercase;
+    line-height: 1;
+  }
+
+  &__price-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 32px;
+  }
+
+  &__price {
+    font-size: 22px;
+    font-weight: 500;
+    margin: 0 20px 0 0;
+    color: $green;
+  }
+
+  &__stars {
+    font-weight: bold;
+    font-size: 12px;
+    color: $green;
+  }
+
+  &__text {
+    color: #747373;
+    margin: 0 0 41px;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 26px;
+  }
+
+  &__btn {
+    @include greenBtn;
+    margin-bottom: 40px;
+  }
+
+  &__sublabel {
+    border-top: 1px dashed #d7d7d7;
+    padding-top: 35px;
+    margin: 0 0 15px;
+    font-size: 15px;
+    text-transform: uppercase;
+    color: $text;
+    font-weight: 700;
+    font-style: normal;
+  }
+
+  &__key {
+    margin-bottom: 60px;
+    font-weight: 600;
+    font-size: 14px;
+    text-transform: uppercase;
+    color: #747373;
+
+    &_type_green {
+      color: $green;
+    }
   }
 }

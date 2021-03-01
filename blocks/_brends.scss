@@ -1,5 +1,7 @@
 .brends {
-  padding: 120px 15 200px;
+  padding: 120px 0 200px;
+
+  @include container;
 
   &__item {
     padding: 0 15px;
