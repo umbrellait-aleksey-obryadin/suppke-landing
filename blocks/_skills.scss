@@ -2,11 +2,21 @@
   background: url(../images/skills-back.jpg);
   background-repeat: repeat;
 
-  @include container;
-
   &__main-container {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
+    padding: 0 15px;
+    column-gap: 30px;
+    margin: 0 auto;
+    max-width: 1300px;
+
+    @media screen and (max-width: 1024px) {
+      grid-template-columns: 1fr 1fr;
+    }
+
+    @media screen and (max-width: 768px) {
+      grid-template-columns: 1fr;
+    }
   }
 
   &__item {
@@ -14,7 +24,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 60px 40px;
+    padding: 60px 25px;
     transition: 0.3s ease-in-out;
     border: 1px solid transparent;
 
@@ -25,6 +35,14 @@
 
     &:hover .skills__img {
       transform: rotateY(360deg);
+    }
+
+    @media screen and (max-width: 1200px) {
+      padding: 40px 15px;
+    }
+
+    @media screen and (max-width: 768px) {
+      padding: 40px 15px;
     }
   }
 

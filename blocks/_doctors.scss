@@ -27,11 +27,28 @@
     position: relative;
     padding: 0 80px;
     column-gap: 30px;
+
+    @media screen and (max-width: 1200px) {
+      padding: 0;
+    }
+
+    @media screen and (max-width: 768px) {
+      grid-template-columns: 1fr;
+    }
   }
 
   &__item {
     display: flex;
     padding: 0 0 55px;
+
+    @media screen and (max-width: 991px) {
+      flex-direction: column;
+    }
+
+    @media screen and (max-width: 768px) {
+      align-items: center;
+      text-align: center;
+    }
   }
 
   &__img {
@@ -40,6 +57,14 @@
     width: 91px;
     height: 91px;
     margin-right: 25px;
+
+    @media screen and (max-width: 991px) {
+      margin: 0 0 30px;
+    }
+
+    @media screen and (max-width: 768px) {
+      margin-bottom: 20px;
+    }
   }
 
   &__label {

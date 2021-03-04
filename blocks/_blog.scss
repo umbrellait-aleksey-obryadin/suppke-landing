@@ -9,7 +9,15 @@
   &__container {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    gap: 30px;
+    column-gap: 30px;
+
+    @media screen and (max-width: 991px) {
+      grid-template-columns: 1fr 1fr;
+    }
+
+    @media screen and (max-width: 576px) {
+      grid-template-columns: 1fr;
+    }
   }
 
   &__item {
@@ -29,6 +37,16 @@
     &:hover {
       color: $green;
     }
+
+    @media screen and (max-width: 1200px) {
+      font-size: 17px;
+      line-height: 1.4;
+    }
+
+    @media screen and (max-width: 768px) {
+      font-size: 24px;
+      line-height: 1.4;
+    }
   }
 
   &__img {
@@ -37,6 +55,18 @@
 
   &__content {
     padding: 40px 30px 35px;
+
+    @media screen and (max-width: 1200px) {
+      padding: 30px 20px 30px;
+    }
+
+    @media screen and (max-width: 991px) {
+      padding: 40px 25px 35px;
+    }
+
+    @media screen and (max-width: 768px) {
+      padding: 40px 30px 35px;
+    }
   }
 
   &__date {
@@ -44,7 +74,8 @@
     font-size: 12px;
     font-weight: 500;
     text-transform: uppercase;
-    margin-bottom: 10px;
+    margin: 0 0 10px;
+    line-height: 30px;
   }
 
   &__text {

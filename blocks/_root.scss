@@ -1,10 +1,7 @@
-.slick-slide {
-  height: auto;
-}
-
 .root {
   margin: 0;
   font-family: "Poppins";
+  position: relative;
 
   &_unscroll {
     overflow: hidden;

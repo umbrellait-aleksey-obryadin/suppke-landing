@@ -13,12 +13,16 @@ $text: #3c3444;
       max-width: 960px;
     }
 
-    @media screen and (max-width: 992px) {
+    @media screen and (max-width: 991px) {
       max-width: 720px;
     }
 
     @media screen and (max-width: 768px) {
       max-width: 540px;
+    }
+
+    @media screen and (max-width: 576px) {
+      max-width: 100%;
     }
   }
 }
@@ -116,6 +120,18 @@ $text: #3c3444;
     max-width: 58%;
     margin: 0 auto 55px;
     position: relative;
+
+    @media screen and (max-width: 1200px) {
+      max-width: 66%;
+    }
+
+    @media screen and (max-width: 991px) {
+      max-width: 83%;
+    }
+
+    @media screen and (max-width: 768px) {
+      max-width: 100%;
+    }
   }
 
   &__title {
@@ -124,6 +140,10 @@ $text: #3c3444;
     text-transform: capitalize;
     color: $text;
     text-align: center;
+
+    @media screen and (max-width: 768px) {
+      font-size: 32px;
+    }
   }
 
   &__bar {
@@ -146,6 +166,18 @@ $text: #3c3444;
     max-width: 58%;
     margin: 0 auto 55px;
     position: relative;
+
+    @media screen and (max-width: 1200px) {
+      max-width: 66%;
+    }
+
+    @media screen and (max-width: 991px) {
+      max-width: 83%;
+    }
+
+    @media screen and (max-width: 768px) {
+      max-width: 100%;
+    }
   }
 
   &__title {
@@ -154,6 +186,10 @@ $text: #3c3444;
     text-transform: capitalize;
     color: white;
     text-align: center;
+
+    @media screen and (max-width: 768px) {
+      font-size: 32px;
+    }
   }
 
   &__bar {

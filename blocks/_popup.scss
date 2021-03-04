@@ -11,9 +11,11 @@
   z-index: 3000;
   justify-content: center;
   align-items: center;
+  box-sizing: border-box;
 
   &_type_search {
     background: #171a21f2;
+    padding: 40px 8px;
   }
 
   &_type_video {
@@ -30,11 +32,13 @@
     flex-direction: column;
     align-items: flex-end;
     max-width: 500px;
+    padding: 0 20px;
 
     &_type_video {
+      padding: 0;
       max-width: 900px;
-      max-height: 65%;
       height: 100%;
+      max-height: 50%;
     }
   }
 
@@ -89,6 +93,7 @@
 
   &__frame {
     width: 100%;
+    line-height: 0;
     height: 100%;
   }
 }

@@ -21,6 +21,14 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+
+    @media screen and (max-width: 1200px) {
+      max-width: 66%;
+    }
+
+    @media screen and (max-width: 991px) {
+      max-width: 100%;
+    }
   }
 
   &::before {
@@ -49,6 +57,10 @@
     outline: none;
     margin-bottom: 45px;
     cursor: pointer;
+
+    @media screen and (max-width: 991px) {
+      margin-bottom: 50px;
+    }
 
     &::before,
     &::after {
@@ -81,6 +93,11 @@
     margin: 0 0 17px;
     line-height: 1.4;
     text-align: center;
+
+    @media screen and (max-width: 768px) {
+      font-size: 32px;
+      line-height: 1.2;
+    }
   }
 
   &__subtitle {

@@ -11,6 +11,14 @@
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     column-gap: 30px;
+
+    @media screen and (max-width: 991px) {
+      grid-template-columns: 1fr 1fr;
+    }
+
+    @media screen and (max-width: 576px) {
+      grid-template-columns: 1fr;
+    }
   }
 
   &::before {
@@ -28,6 +36,7 @@
     position: relative;
     display: flex;
     justify-content: center;
+    align-items: flex-start;
     margin: 0 0 50px;
   }
 

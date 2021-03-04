@@ -12,6 +12,7 @@
     right: 0;
     z-index: 2000;
     animation: fadeInDown 0.5s;
+    box-shadow: 0 10px 15px #1919191a;
   }
 
   @include container;
@@ -23,6 +24,24 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    @media screen and (max-width: 1200px) {
+      padding: 10px 0;
+    }
+
+    @media screen and (max-width: 992px) {
+      padding: 20px 0;
+    }
+
+    @media screen and (max-width: 768px) {
+      padding: 20px 0;
+    }
+  }
+
+  &__nav {
+    @media screen and (max-width: 991px) {
+      display: none;
+    }
   }
 
   &__link {
@@ -50,11 +69,19 @@
         transform: translateY(-50%);
         border-radius: 50%;
       }
+
+      @media screen and (max-width: 768px) {
+        display: none;
+      }
     }
 
     &_type_basket {
       color: $green;
       line-height: 30px;
+
+      @media screen and (max-width: 768px) {
+        display: none;
+      }
 
       .header__basket {
         position: absolute;
@@ -196,7 +223,7 @@
     @include greenBtn;
     margin-left: 30px;
 
-    @media screen and (max-width: 991px) {
+    @media screen and (max-width: 1200px) {
       display: none;
     }
   }
